@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductFilterPipe } from './product-list/product-filter.pipe';
 import { StarComponent } from './star/star.component';
+import { ProductService } from './product-list/product.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { StarComponent } from './star/star.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
